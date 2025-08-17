@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Expose port for Flask/FastAPI (default 5000 for Flask, 8000 for FastAPI)
-EXPOSE 5000
+EXPOSE 5050
 EXPOSE 8000
 
 # Default command (can be changed for FastAPI)
