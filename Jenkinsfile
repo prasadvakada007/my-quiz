@@ -8,12 +8,12 @@ pipeline {
                 }
             }
         }
-        stage('Run Container') {
-            steps {
-                script {
-                    dockerImage.run("-p 5000:5000 -p 8000:8000")
-                }
-            }
+       stage('Run Container') {
+    steps {
+        script {
+            bat "docker run -d -p 5000:5000 -p 8000:8000 my-quiz"
         }
+    }
+}
     }
 }
